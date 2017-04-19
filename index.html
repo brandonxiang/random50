@@ -6,10 +6,21 @@
     <title>测试随机数</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
     <link href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+    <style>
+    .center{
+        position: absolute;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    </style>
 </head>
 
 <body>
-    <div class="weui-cells">
+    <div class="center">
+        <div class="weui-cells">
     <div class="weui-cell weui-cell_vcode">
         <div class="weui-cell__hd">
             <label class="weui-label">随机次数</label>
@@ -20,6 +31,7 @@
         <div class="weui-cell__ft">
             <a href="javascript:;" class="weui-vcode-btn" id="btn">测试</a>
         </div>
+    </div>
     </div>
     </div>
 </body>
