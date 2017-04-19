@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <input id="range" type="number" value="100000">
-    <button id="btn">测试</button>
+    <div class="weui-cells">
+    <div class="weui-cell weui-cell_vcode">
+        <div class="weui-cell__hd">
+            <label class="weui-label">随机次数</label>
+        </div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" id="range" type="number" value="100000">
+        </div>
+        <div class="weui-cell__ft">
+            <a href="javascript:;" class="weui-vcode-btn" id="btn">测试</a>
+        </div>
+    </div>
+    </div>
 </body>
 <script>
     document.getElementById('btn').onclick = function () {
@@ -25,8 +37,8 @@
             }
         }
 
-        alert("less than 0.5 is" + parseFloat(less) / range)
-        alert("more than 0.5 is" + parseFloat(more) / range)
+        alert("less than 0.5 is " + parseFloat(less) / range)
+        alert("more than 0.5 is " + parseFloat(more) / range)
     }
 </script>
 
