@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="range" type="number" value="100000">
+    <button id="btn">测试</button>
+</body>
+<script>
+    document.getElementById('btn').onclick = function () {
+        var less = 0
+        var more = 0
+        var range = parseInt(document.getElementById('range').value)
+        var i
+        for (i = 0; i < range; i++) {
+            var num = Math.random()
+            if (num < 0.5) {
+                less++
+            } else {
+                more++
+            }
+        }
+
+        alert("less than 0.5 is" + parseFloat(less) / range)
+        alert("more than 0.5 is" + parseFloat(more) / range)
+    }
+</script>
+
+</html>
